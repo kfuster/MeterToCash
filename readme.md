@@ -62,3 +62,4 @@ Exemple de body json a envoyer:
 - Ajout d'un swagger
 - Ajout d'une pipeline
 - Ajout de logs
+- Ajout d'une pipeline
