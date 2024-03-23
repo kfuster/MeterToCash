@@ -1,17 +1,17 @@
 package fr.ekwateur.metertocash.model;
 
-import java.util.StringJoiner;
+import java.util.List;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-final class Professional extends Client {
+public final class Professional extends Client {
     private Long siretNumber;
     private String businessName;
     private Double revenue;
 
-    public Professional(String reference, Long siretNumber, String businessName, Double revenue) {
-        super(reference);
+    public Professional(String reference, List<Consumption> consumptions, Long siretNumber, String businessName, Double revenue) {
+        super(reference, consumptions);
         this.siretNumber = siretNumber;
         this.businessName = businessName;
         this.revenue = revenue;
